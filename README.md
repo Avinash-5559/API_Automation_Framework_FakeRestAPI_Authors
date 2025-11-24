@@ -52,7 +52,7 @@ Payloads in this project are created using **raw JSON strings**, making it simpl
 
 ## 🏗️ Project Structure
 
-```base
+```bash
 API_Automation_Framework_FakeRestAPI_Authors/
 │
 ├── .idea/                                              # IntelliJ config
