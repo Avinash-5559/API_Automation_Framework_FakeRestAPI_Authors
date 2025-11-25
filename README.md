@@ -55,50 +55,56 @@ Payloads in this project are created using **raw JSON strings**, making it simpl
 ```bash
 API_Automation_Framework_FakeRestAPI_Authors/
 │
-├── .idea/                                              # IntelliJ config
-├── .mvn/                                               # Maven wrapper files
-├── allure-results/                                     # Allure results (auto-generated)
+├── .idea/                                                  # IntelliJ config
+├── .mvn/                                                   # Maven wrapper files
+├── allure-results/                                         # Allure results (auto-generated)
 ├── logs/
-│   └── test.log                                        # Sample execution log
+│   └── test.log                                            # Execution logs
 │
-├── pom.xml                                             # Dependencies & build config
+├── pom.xml                                                 # Project dependencies & build config
 ├── .gitignore
 │
-├── testng_*.xml                                        # TestNG suite files
+├── testng_*.xml                                            # TestNG suite files
 │
 ├── src/
-│   ├── main/java/com/avinashsinha/
-│   │   ├── endpoints/                                  # API endpoints
-│   │   │   └── APIConstants.java
+│   ├── main/
+│   │   ├── java/com.avinashsinha/
+│   │   │   ├── endpoints/
+│   │   │   │   └── APIConstants.java                       # API endpoints constants
+│   │   │   │
+│   │   │   └── module/
+│   │   │       └── PayloadManager.java                     # Payload Manager (String-based)
 │   │   │
-│   │   └── modules/                                    # Payload Manager (String-based)
-│   │       └── PayloadManager.java
+│   │   └── resources/
+│   │       └── log4j2.xml                                  # Logging config
 │   │
-│   ├── main/resources/
-│   │   └── log4j2.xml                                  # Logging config
-│   │
-│   └── test/java/com/avinashsinha/
-│       ├── asserts/                                    # Assertion utilities
-│       │   └── AssertActions.java
+│   └── test/
+│       ├── java/com.avinashsinha/
+│       │   ├── asserts/
+│       │   │   └── AssertActions.java                      # Assertion utilities
+│       │   │
+│       │   ├── base/
+│       │   │   └── BaseTest.java                           # Base Test setup
+│       │   │
+│       │   └── tests/
+│       │       ├── crud/                                   # CRUD Test Cases
+│       │       │   ├── TestAuthorBookById.java
+│       │       │   ├── TestAuthorsCreate.java
+│       │       │   ├── TestAuthorsDelete.java
+│       │       │   ├── TestAuthorsDetails.java
+│       │       │   ├── TestAuthorsDetailsById.java
+│       │       │   ├── TestAuthorsFullUpdate.java
+│       │       │   └── TestJSONSchemaValidation.java
+│       │       │
+│       │       ├── integration/                            # Integration Tests
+│       │       │   └── TestE2EFlow.java
+│       │       │
+│       │       └── sample/                                 # Sample Tests
+│       │           └── TestIntegrationSample.java
 │       │
-│       ├── base/                                       # Base Test setup
-│       │   └── BaseTest.java
-│       │
-│       └── tests/
-│           ├── crud/                                   # CRUD Test Cases
-│           │   ├── TestAuthorsCreate.java
-│           │   ├── TestAuthorsDelete.java
-│           │   ├── TestAuthorsDetails.java
-│           │   ├── TestAuthorsDetailsById.java
-│           │   ├── TestAuthorsFullUpdate.java
-│           │   ├── TestAuthorBookById.java
-│           │   └── TestJSONSchemaValidation.java
-│           │
-│           ├── integration/                            # Integration Tests
-│           │   └── TestE2EFlow.java
-│           │
-│           └── sample/                                 # Sample Tests
-│               └── TestIntegrationSample.java
+│       └── resources/
+│           └── schemas/
+│               └── author_create_schema.json               # JSON schema for validation
 │
 └── README.md
 
@@ -108,9 +114,11 @@ API_Automation_Framework_FakeRestAPI_Authors/
 ## ▶️ Running Tests
 
 ### Integration Test (Create Author, Details, Update and Delete Author)
+
 ```bash
 mvn clean test -DsuiteXmlFile=testng_integration.xml
 ```
+
 #### Available TestNG XMLs
 
 - `testng_authorBookById.xml`
@@ -126,14 +134,17 @@ mvn clean test -DsuiteXmlFile=testng_integration.xml
 
 ## 📊 Reporting
 ### Generate Allure Report
+
 ```bash
 allure serve allure-results
 ```
+
   <img src="https://github.com/user-attachments/assets/285180c9-fc54-45ec-9289-93075c9f199f" alt="FakeRestAPI Authors Allure Report" width="1100">
 
 This will launch an interactive report in your browser.
 
 ---
+
 ##  ✅ Example Payload (String-Based JSON)
 
 ```java
