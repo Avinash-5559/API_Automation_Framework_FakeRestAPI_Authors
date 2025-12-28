@@ -1,0 +1,63 @@
+2025-11-22 20:18:08 INFO  TestAuthorsCreate - Send the API Request
+2025-11-22 21:46:14 INFO  TestAuthorsCreate - Send the API Request
+2025-11-22 21:46:17 INFO  TestAuthorsCreate - End the API Request and assertions
+2025-11-22 21:53:49 INFO  TestAuthorsCreate - Build Payload and Send the API Request
+2025-11-22 21:53:53 INFO  TestAuthorsCreate - End the API Request and assertions
+2025-11-22 21:59:55 INFO  TestAuthorsDetails - Build Payload and Send the API Request
+2025-11-22 21:59:59 INFO  TestAuthorsDetails - End the API Request
+2025-11-22 22:00:28 INFO  TestAuthorsDetails - Send the API Request
+2025-11-22 22:00:30 INFO  TestAuthorsDetails - End the API Request
+2025-11-23 11:56:29 INFO  TestAuthorsCreate - Build Payload and Send the API Request
+2025-11-23 11:57:13 INFO  TestAuthorsCreate - Build Payload and Send the API Request
+2025-11-23 11:57:16 INFO  TestAuthorsCreate - End the API Request and assertions
+2025-11-23 12:10:13 INFO  TestAuthorBookById - Send the API Request
+2025-11-23 12:43:49 INFO  TestAuthorBookById - Send the API Request
+2025-11-23 12:46:22 INFO  TestAuthorBookById - Send the API Request
+2025-11-23 12:46:43 INFO  TestAuthorBookById - Send the API Request
+2025-11-23 12:53:06 INFO  TestAuthorBookById - Send the API Request
+2025-11-23 12:53:08 INFO  TestAuthorBookById - End the API Request
+2025-11-23 12:58:58 INFO  TestAuthorsDetails - Send the API Request
+2025-11-23 12:59:44 INFO  TestAuthorsDetails - Send the API Request
+2025-11-23 12:59:47 INFO  TestAuthorsDetails - End the API Request and assertions
+2025-11-23 13:00:10 INFO  TestAuthorsDetails - Send the API Request
+2025-11-23 13:00:12 INFO  TestAuthorsDetails - End the API Request and assertions
+2025-11-23 13:00:22 INFO  TestAuthorsDetails - Send the API Request
+2025-11-23 13:00:25 INFO  TestAuthorsDetails - End the API Request and assertions
+2025-11-23 13:00:31 INFO  TestAuthorsDetails - Send the API Request
+2025-11-23 13:00:34 INFO  TestAuthorsDetails - End the API Request and assertions
+2025-11-23 13:01:43 INFO  TestAuthorsDetailsById - Send the API Request
+2025-11-23 13:01:46 INFO  TestAuthorsDetailsById - End the API Request and assertions
+2025-11-23 13:02:05 INFO  TestAuthorsDetailsById - Send the API Request
+2025-11-23 13:02:08 INFO  TestAuthorsDetailsById - End the API Request
+2025-11-23 13:07:46 INFO  TestAuthorsDetailsById - Send the API Request
+2025-11-23 13:07:49 INFO  TestAuthorsDetailsById - End the API Request
+2025-11-23 13:08:13 INFO  TestAuthorsFullUpdate - Build Payload and Send the API Request
+2025-11-23 13:09:03 INFO  TestAuthorsFullUpdate - Build Payload and Send the API Request
+2025-11-23 13:09:42 INFO  TestAuthorsFullUpdate - Build Payload and Send the API Request
+2025-11-23 13:09:45 INFO  TestAuthorsFullUpdate - End the API Request and assertions
+2025-11-23 13:19:48 INFO  TestAuthorsDelete - Send the API Request
+2025-11-23 13:19:50 INFO  TestAuthorsDelete - End the API Request
+2025-11-23 15:39:25 INFO  TestE2EFlow - Start the Author Creation
+2025-11-23 15:39:27 INFO  TestE2EFlow - Complete the Author Creation
+2025-11-23 15:39:27 INFO  TestE2EFlow - Show the Details of All Authors
+2025-11-23 15:39:28 INFO  TestE2EFlow - End the Details of All Authors
+2025-11-23 15:39:28 INFO  TestE2EFlow - Show the Details of Single Author by Id
+2025-11-23 15:39:29 INFO  TestE2EFlow - End the Details of Single Author by Id
+2025-11-23 15:48:26 INFO  TestE2EFlow - Start the Author Creation
+2025-11-23 15:48:29 INFO  TestE2EFlow - Complete the Author Creation
+2025-11-23 15:48:29 INFO  TestE2EFlow - Show the Details of All Authors
+2025-11-23 15:48:30 INFO  TestE2EFlow - End the Details of All Authors
+2025-11-23 15:48:30 INFO  TestE2EFlow - Show the Details of Single Author by Id
+2025-11-23 15:48:31 INFO  TestE2EFlow - End the Details of Single Author by Id
+2025-11-23 15:48:31 INFO  TestE2EFlow - Show the Details of Author Book by Id
+2025-11-23 15:48:32 INFO  TestE2EFlow - End the Details of Author Book by Id
+2025-11-23 15:48:32 INFO  TestE2EFlow - Full Update the Author by Id
+2025-11-23 15:48:32 INFO  TestE2EFlow - Complete the Full Updation
+2025-11-23 15:48:32 INFO  TestE2EFlow - Delete the Author by Id
+2025-11-23 15:48:33 INFO  TestE2EFlow - Deletion is Done
+2025-11-23 16:17:38 INFO  TestJSONSchemaValidation - Build Payload and Send the API Request
+2025-11-23 16:29:47 INFO  TestJSONSchemaValidation - Build Payload and Send the API Request
+2025-11-23 16:39:31 INFO  TestJSONSchemaValidation - Build Payload and Send the API Request
+2025-11-23 16:39:34 INFO  TestJSONSchemaValidation - End the API Request and assertions
+2025-11-23 16:41:36 INFO  TestJSONSchemaValidation - Build Payload and Send the API Request
+2025-11-23 16:41:39 INFO  TestJSONSchemaValidation - End the API Request and assertions
