@@ -20,6 +20,18 @@ Payloads in this project are created using **raw JSON strings**, making it simpl
 
 ---
 
+## ⚙️ Tech Stack
+
+- **Java 11+**
+- **IntelliJ IDEA** – IDE for development
+- **Maven** – Build & dependency management
+- **Rest-Assured** – HTTP client for API automation
+- **TestNG** – Testing framework
+- **AssertJ** – Advanced assertions
+- **Allure Reports** – Reporting framework
+
+---
+
 ## 🚀 Features
 
 - Automated tests for the **Authors** and **Authors → Books** endpoints
@@ -35,18 +47,6 @@ Payloads in this project are created using **raw JSON strings**, making it simpl
     - Integration Tests
 - Supports **Allure Reporting**
 - Logging support using **Log4j2**
-
----
-
-## ⚙️ Tech Stack
-
-- **Java 11+**
-- **IntelliJ IDEA** – IDE for development
-- **Maven** – Build & dependency management
-- **Rest-Assured** – HTTP client for API automation
-- **TestNG** – Testing framework
-- **AssertJ** – Advanced assertions
-- **Allure Reports** – Reporting framework
 
 ---
 
