@@ -1,0 +1,61 @@
+package com.avinashsinha.tests.crud;
+
+import com.avinashsinha.asserts.AssertActions;
+import com.avinashsinha.base.BaseTest;
+import com.avinashsinha.endpoints.APIConstants;
+import io.qameta.allure.Description;
+import io.qameta.allure.Owner;
+import io.restassured.RestAssured;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.testng.annotations.Test;
+
+public class TestAuthorsDetailsById extends BaseTest {
+
+    private static final Logger logger = LogManager.getLogger(TestAuthorsDetailsById.class);
+
+    @Test(groups = "Regression", priority = 1)
+    @Owner("Avinash Sinha")
+    @Description("TC#1 : Step 1. Details of Author By Id")
+    public void testAuthorDetails_GET() {
+
+        int id_e = 86;
+
+        logger.info("Send the API Request");
+
+        // 1) send request
+        response = RestAssured.given(requestSpecification)
+                .pathParam("id", id_e)
+                .when().log().all()
+                .get(APIConstants.ID);
+
+        // 2) basic status code validation
+        validatableResponse=response.then().log().all().statusCode(200);
+
+        // 3) use AssertActions for simple checks
+        assertActions = new AssertActions(response);
+
+        System.out.println("\n------------------------------ VERIFY AND PRINT ------------------------------\n");
+
+        int id = response.jsonPath().getInt("id");
+        System.out.println("Id          : " + id);
+        assertActions.verifyAuthorIdNotNull();
+
+        int idBook = response.jsonPath().getInt("idBook");
+        System.out.println("Book Id     : " + idBook);
+        assertActions.verifyBookIdNotNull();
+
+        String firstName = response.jsonPath().getString("firstName");
+        System.out.println("First Name  : " + firstName);
+        assertActions.verifyFirstNameNotBlank();
+
+        String lastName = response.jsonPath().getString("lastName");
+        System.out.println("Last Name   : " + lastName);
+        assertActions.verifyLastNameNotEmpty();
+
+        System.out.println();
+
+        logger.info("End the API Request");
+
+    }
+}
