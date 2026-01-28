@@ -61,3 +61,5 @@
 2025-11-23 16:39:34 INFO  TestJSONSchemaValidation - End the API Request and assertions
 2025-11-23 16:41:36 INFO  TestJSONSchemaValidation - Build Payload and Send the API Request
 2025-11-23 16:41:39 INFO  TestJSONSchemaValidation - End the API Request and assertions
+2026-01-28 14:24:57 INFO  TestJSONSchemaValidation - Build Payload and Send the API Request
+2026-01-28 14:25:00 INFO  TestJSONSchemaValidation - End the API Request and assertions
