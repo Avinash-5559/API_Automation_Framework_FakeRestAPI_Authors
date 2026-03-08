@@ -76,3 +76,5 @@
 2026-03-04 00:32:34 INFO  TestAuthorsCreate - Build Payload and Send the API Request
 2026-03-04 00:33:02 INFO  TestAuthorsCreate - Build Payload and Send the API Request
 2026-03-04 00:33:04 INFO  TestAuthorsCreate - End the API Request and assertions
+2026-03-09 01:02:57 INFO  TestAuthorsCreate - Build Payload and Send the API Request
+2026-03-09 01:03:00 INFO  TestAuthorsCreate - End the API Request and assertions
