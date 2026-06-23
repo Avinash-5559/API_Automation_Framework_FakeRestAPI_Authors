@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 
 public class TestAuthorBookById extends BaseTest {
 
-    private static final Logger logger = LogManager.getLogger(TestAuthorBookById.class);
+    private static final Logger LOGGER = LogManager.getLogger(TestAuthorBookById.class);
 
     @Test(groups = "Regression", priority = 1)
     @Owner("Avinash Sinha")
@@ -20,7 +20,7 @@ public class TestAuthorBookById extends BaseTest {
 
         int idBook_e = 50;
 
-        logger.info("Send the API Request");
+        LOGGER.info("Send the API Request");
 
         // 1) send request
         response = RestAssured.given(requestSpecification)
@@ -33,7 +33,7 @@ public class TestAuthorBookById extends BaseTest {
 
         System.out.println();
 
-        logger.info("End the API Request");
+        LOGGER.info("End the API Request");
 
     }
 }
